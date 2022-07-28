@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bee Movie Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="form">
+  <h1>Bee Movie Survey Form</h1>
+  <p>Fill this survey out to provide feeback on this one of a kind movie!</p>
+   <form action="survey-form">
+  <fieldset>
+    <label>Enter First Name: <input type="text" name="first-name" required/></label>
+    <label>Enter Last Name: <input type="text" name="last-name" required /></label>
+    <label>Enter Email: <input type="email" name="email"
+    required /></label>
+    <label>Enter Age: <input type="number" name="age" min="13" max="100" required /></label>
+  </fieldset>
+  <fieldset>
+    <label>How much did you like the movie?
+      <select name="rate">
+        <option value="">(select one)</option>
+        <option value="1">I absolutely LOVED this movie</option>
+        <option value="2">I enjoyed this movie</option>
+        <option value="3">I found it ok</option>
+        <option value="4">I hate this movie</option>
+        <option value="5">This movie is an abomination!</option>
+        <option value="6">Other</option>
+      </select>
+    <p>which of these quotes are your favorite from the movie</p>
+    <label>You like jazz? <input type="checkbox" name="jazz"/></label>
+    <label>Yellow,black,yellow,black...black and yellow lets shake it up a little<input type="checkbox" name="yellow-black"/></label>
+    <label>Why is Yogurt Night so difficult?<input type="checkbox" name="yogurt"/><label>
+  </fieldset>
+  <fieldset>
+    <p>Was this survey fun?</p>
+    <label>No<input type="radio" name="option" class="inline"/></label>
+    <label>Yes<input type="radio" name="option" class="inline"/></label>
+    <label>Anything else you want to add?
+      <textarea name="words" rows="3" cols="30"></textarea></label>
+  </fieldset>
+  <input type="submit" value="submit"/>
+  </form>
+  </div>
+</body>
+</html>
